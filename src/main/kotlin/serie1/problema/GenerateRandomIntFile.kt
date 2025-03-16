@@ -15,7 +15,8 @@ fun main() {
             f.println((1..MAX).random())
         }
     }
-
+    // Close file
+    pw.close()
 }
 
 

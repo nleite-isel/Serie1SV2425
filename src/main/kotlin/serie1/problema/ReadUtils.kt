@@ -9,7 +9,7 @@ fun createReader(fileName: String): BufferedReader {
     return BufferedReader(FileReader(fileName))
 }
 
-fun createWriter(fileName: String?): PrintWriter {
+fun createWriter(fileName: String): PrintWriter {
     return PrintWriter(fileName)
 }
 
@@ -26,6 +26,8 @@ fun main() {
         pw.println(line)
         line = br.readLine()
     }
+    // Close files
+    br.close()
     pw.close()
 }
 
